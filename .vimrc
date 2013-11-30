@@ -11,3 +11,7 @@
 
 " perform autoindenting based on filetype plugin
   filetype plugin indent on
+
+" load configs
+  runtime! general.vim
+  runtime! mappings.vim
