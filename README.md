@@ -6,6 +6,10 @@ Using [Vundle](https://github.com/gmarik/vundle).
 
 ### General
 
+[Supertab](https://github.com/ervandew/supertab)
+
+[NERD Tree](https://github.com/scrooloose/nerdtree)
+
 [CtrlP](https://github.com/kien/ctrlp.vim)
 
 [Ag](https://github.com/rking/ag.vim)
