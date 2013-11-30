@@ -2,6 +2,13 @@
   Bundle "git://github.com/gmarik/vundle.git"
 
 " General
+  Bundle "git://github.com/ervandew/supertab.git"
+  Bundle "git://github.com/scrooloose/nerdtree.git"
+    let NERDTreeHijackNetrw = 0
+
+    nmap gt :NERDTreeToggle<CR>
+    nmap g :NERDTree \| NERDTreeToggle \| NERDTreeFind<CR>
+
   Bundle "git://github.com/kien/ctrlp.vim.git"
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>

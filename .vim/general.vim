@@ -3,6 +3,7 @@
 
 " default color scheme
   set background=dark
+  color molokai
 
 " scroll the window when we get near the edge
   set scrolloff=4 sidescrolloff=10
@@ -60,3 +61,6 @@
 
 " use tab-complete to see a list of possiblities when entering commands
   set wildmode=list:longest,full
+
+" <Leader>
+  let mapleader=","
