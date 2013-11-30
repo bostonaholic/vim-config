@@ -61,6 +61,3 @@
 
 " use tab-complete to see a list of possiblities when entering commands
   set wildmode=list:longest,full
-
-" <Leader>
-  let mapleader=","

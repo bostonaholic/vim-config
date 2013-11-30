@@ -2,6 +2,9 @@
   set nocompatible
   filetype off
 
+" <Leader>
+  let mapleader=","
+
 " bring in the bundles
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
