@@ -1,7 +1,7 @@
 " shortcuts for frequenly used files
   nmap gs :e db/schema.rb<cr>
   nmap gr :e config/routes.rb<cr>
-  nmap gm :e Gemfile<cr>
+  nmap ge :e Gemfile<cr>
 
 " mapping the jumping between splits. Hold control while using vim nav.
   nmap <C-J> <C-W>j
