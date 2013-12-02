@@ -5,6 +5,9 @@
   set background=dark
   color molokai
 
+" don't wrap long lines
+  set nowrap
+
 " scroll the window when we get near the edge
   set scrolloff=4 sidescrolloff=10
 
