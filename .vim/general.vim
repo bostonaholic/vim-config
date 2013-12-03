@@ -1,9 +1,12 @@
 " enable syntax highlighting
   syntax on
 
+" hide buffers instead of closing them
+  set hidden
+
 " default color scheme
   set background=dark
-  color molokai
+  colorscheme molokai
 
 " don't wrap long lines
   set nowrap
@@ -12,8 +15,7 @@
   set scrolloff=4 sidescrolloff=10
 
 " use 2 spaces for tabs
-  set expandtab tabstop=2 softtabstop=2 shiftwidth=2
-  set smarttab
+  set smarttab expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 " enable line numbers, and don't make them any wider than necessary
   set number numberwidth=2
@@ -23,6 +25,9 @@
 
 " highlight the search matches
   set hlsearch
+
+" highlight current line
+  set cursorline
 
 " searching is case insensitive when all lowercase
   set ignorecase smartcase
@@ -34,7 +39,10 @@
   set autoread
 
 " match indentation of previous line
-  set autoindent
+  set autoindent copyindent
+
+" show matching parentheses
+  set showmatch matchtime=3
 
 " don't blink the cursor
   set guicursor=a:blinkon0
@@ -46,8 +54,7 @@
   set laststatus=2
 
 " flip the default split directions to sane ones
-  set splitright
-  set splitbelow
+  set splitright splitbelow
 
 " don't beep for errors
   set visualbell
@@ -56,11 +63,13 @@
   set backspace=indent,eol,start
 
 " highlight trailing whitespace
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-  set list
+  set list listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
 " have the mouse enabled all the time
   set mouse=a
 
 " use tab-complete to see a list of possiblities when entering commands
   set wildmode=list:longest,full
+
+" don't write backup files
+  set nobackup noswapfile

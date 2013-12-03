@@ -1,9 +1,16 @@
+" Quickly edit/source the vimrc file
+  nmap <silent> <leader>ev :edit $MYVIMRC<cr>
+  nmap <silent> <leader>sv :source $MYVIMRC<cr>
+
+" make ; do the same as :
+  nnoremap ; :
+
 " shortcuts for frequenly used files
   nmap gs :e db/schema.rb<cr>
   nmap gr :e config/routes.rb<cr>
   nmap ge :e Gemfile<cr>
 
-" mapping the jumping between splits. Hold control while using vim nav.
+" easy window navigation
   nmap <C-J> <C-W>j
   nmap <C-K> <C-W>k
   nmap <C-H> <C-W>h
