@@ -65,8 +65,13 @@
   Bundle "git://github.com/juvenn/mustache.vim.git"
   Bundle "git://github.com/nono/vim-handlebars.git"
   Bundle "git://github.com/tomtom/tcomment_vim.git"
-  Bundle "git://github.com/slim-template/vim-slim.git"
   Bundle "git://github.com/groenewege/vim-less.git"
+  Bundle "git://github.com/tpope/vim-haml.git"
+    au BufNewFile,BufRead *.haml set filetype=haml
+
+  Bundle "git://github.com/slim-template/vim-slim.git"
+    au BufNewFile,BufRead *.slim set filetype=slim
+
   Bundle "git://github.com/scrooloose/syntastic.git"
     let g:syntastic_enable_signs=1
     let g:syntastic_quiet_warnings=1
