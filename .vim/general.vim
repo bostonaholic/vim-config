@@ -73,3 +73,10 @@
 
 " don't write backup files
   set nobackup noswapfile
+
+" save on losing focus
+  autocmd FocusLost * :wa
+  augroup AutoWrite
+    autocmd! BufLeave * :update
+  augroup END
+  set autowrite autowriteall
