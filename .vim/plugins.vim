@@ -81,6 +81,7 @@
                                \ 'passive_filetypes': ['haml','scss','sass'] }
 
 " Ruby
+  Bundle "git://github.com/vim-ruby/vim-ruby.git"
   Bundle "git://github.com/tpope/vim-rails.git"
     map <Leader>oc :Rcontroller<Space>
     map <Leader>ov :Rview<Space>
@@ -91,6 +92,8 @@
     map <Leader>oi :Rintegration<Space>
   Bundle "git://github.com/tpope/vim-cucumber.git"
   Bundle "git://github.com/tpope/vim-endwise.git"
+  Bundle "git://github.com/sunaku/vim-ruby-minitest.git"
 
 " JavaScript
+  Bundle "git://github.com/pangloss/vim-javascript.git"
   Bundle "git://github.com/kchmck/vim-coffee-script.git"
