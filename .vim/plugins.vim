@@ -66,6 +66,8 @@
   Bundle "git://github.com/juvenn/mustache.vim.git"
   Bundle "git://github.com/nono/vim-handlebars.git"
   Bundle "git://github.com/tomtom/tcomment_vim.git"
+  Bundle "git://github.com/othree/html5.vim.git"
+  Bundle "git://github.com/hail2u/vim-css3-syntax.git"
   Bundle "git://github.com/groenewege/vim-less.git"
   Bundle "git://github.com/tpope/vim-haml.git"
     au BufNewFile,BufRead *.haml set filetype=haml
