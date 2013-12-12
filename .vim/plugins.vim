@@ -2,6 +2,7 @@
   Bundle "git://github.com/gmarik/vundle.git"
 
 " General
+  Bundle "git://github.com/altercation/vim-colors-solarized.git"
   Bundle "git://github.com/ervandew/supertab.git"
   Bundle "git://github.com/scrooloose/nerdtree.git"
     let NERDTreeHijackNetrw = 0

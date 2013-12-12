@@ -6,7 +6,8 @@
 
 " default color scheme
   set background=dark
-  colorscheme molokai
+  let g:solarized_termcolors=256
+  colorscheme solarized
 
 " don't wrap long lines
   set nowrap
