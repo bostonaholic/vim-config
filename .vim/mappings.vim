@@ -2,9 +2,6 @@
   nmap <silent> <leader>ev :edit $MYVIMRC<cr>
   nmap <silent> <leader>sv :source $MYVIMRC<cr>
 
-" make ; do the same as :
-  nnoremap ; :
-
 " shortcuts for frequenly used files
   nmap gs :e db/schema.rb<cr>
   nmap gr :e config/routes.rb<cr>
