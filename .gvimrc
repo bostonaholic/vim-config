@@ -1,7 +1,3 @@
-" default color scheme
-  set background=dark
-  colors molokai
-
 " use gui tabs
   set guioptions+=e
 

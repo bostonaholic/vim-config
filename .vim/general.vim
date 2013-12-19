@@ -1,12 +1,14 @@
 " enable syntax highlighting
-  syntax on
-
-" hide buffers instead of closing them
-  set hidden
+  syntax enable
 
 " default color scheme
   set background=dark
-  colorscheme molokai
+  let g:solarized_termcolors=256
+  let g:solarized_termtrans=1
+  colorscheme solarized
+
+" hide buffers instead of closing them
+  set hidden
 
 " don't wrap long lines
   set nowrap
