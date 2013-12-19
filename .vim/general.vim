@@ -3,9 +3,7 @@
 
 " default color scheme
   set background=dark
-  let g:solarized_termcolors=256
-  let g:solarized_termtrans=1
-  colorscheme solarized
+  colorscheme molokai
 
 " hide buffers instead of closing them
   set hidden
