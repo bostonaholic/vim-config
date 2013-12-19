@@ -26,14 +26,8 @@
 " highlight the search matches
   set hlsearch
 
-" highlight current line
-  set cursorline
-
 " searching is case insensitive when all lowercase
   set ignorecase smartcase
-
-" set temporary directory (don't litter local dir with swp/tmp files)
-  set directory=/tmp/
 
 " pick up external file modifications
   set autoread
