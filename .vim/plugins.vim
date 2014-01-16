@@ -64,6 +64,7 @@
     vmap <C-Down> ]egv
 
 " Programming
+  Bundle "git://github.com/tpope/vim-fugitive.git"
   Bundle "git://github.com/juvenn/mustache.vim.git"
   Bundle "git://github.com/nono/vim-handlebars.git"
   Bundle "git://github.com/tomtom/tcomment_vim.git"
