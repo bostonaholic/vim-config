@@ -78,7 +78,7 @@
 
   Bundle "git://github.com/scrooloose/syntastic.git"
     let g:syntastic_enable_signs=1
-    let g:syntastic_quiet_warnings=1
+    let g:syntastic_quiet_messages=1
     " syntastic is too slow for haml and sass
     let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'active_filetypes': [],
