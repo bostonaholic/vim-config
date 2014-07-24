@@ -5,6 +5,9 @@
   set background=dark
   colorscheme molokai
 
+" enable use of system keyboard
+  set clipboard=unnamed
+
 " hide buffers instead of closing them
   set hidden
 
