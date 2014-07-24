@@ -1,5 +1,7 @@
 # Minimalist Vim Config
 
+`$ brew install vim`
+
 ## Plugins
 
 Using [Vundle](https://github.com/gmarik/vundle).
