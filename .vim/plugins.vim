@@ -79,7 +79,7 @@
 
   Plugin 'scrooloose/syntastic'
     let g:syntastic_enable_signs=1
-    let g:syntastic_quiet_messages=1
+    let g:syntastic_quiet_messages={}
     " syntastic is too slow for haml and sass
     let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'active_filetypes': [],
