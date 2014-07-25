@@ -82,8 +82,8 @@
     let g:syntastic_quiet_messages={}
     " syntastic is too slow for haml and sass
     let g:syntastic_mode_map = { 'mode': 'active',
-                               \ 'active_filetypes': [],
-                               \ 'passive_filetypes': ['haml','scss','sass'] }
+                               \ 'active_filetypes': ['css', 'coffee', 'html', 'javascript', 'json', 'less', 'ruby', 'sh', 'vim', 'yaml', 'zsh'],
+                               \ 'passive_filetypes': ['haml', 'sass', 'scss', 'slim'] }
 
 " Ruby
   Plugin 'vim-ruby/vim-ruby'
