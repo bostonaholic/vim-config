@@ -24,9 +24,9 @@ end
 
 desc "Install vundle for vim plugins"
 task :vundle do
-  target = "#{MAC_FILES['.vim']}/bundle/vundle"
-  Installer.git_clone('http://github.com/gmarik/vundle.git', target)
-  puts "Running BundleInstall to install plugins...this will take a couple minutes."
-  `vim +BundleInstall +qall`
+  target = "#{MAC_FILES['.vim']}/bundle/Vundle.vim"
+  Installer.git_clone('https://github.com/gmarik/Vundle.vim.git', target)
+  puts "Running PluginInstall to install plugins...this will take a couple minutes."
+  `vim +PluginInstall +qall`
   puts "vim plugins installed."
 end

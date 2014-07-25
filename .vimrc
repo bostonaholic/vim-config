@@ -6,11 +6,14 @@
   let mapleader=","
 
 " bring in the bundles
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
 
 " load plugins
   runtime! plugins.vim
+
+" finalize vundle
+  call vundle#end()
 
 " perform autoindenting based on filetype plugin
   filetype plugin indent on

@@ -1,17 +1,17 @@
 " Vundle
-  Bundle "git://github.com/gmarik/vundle.git"
+  Plugin 'gmarik/Vundle.vim'
 
 " General
-  Bundle "git://github.com/tomasr/molokai.git"
-  Bundle "git://github.com/altercation/vim-colors-solarized.git"
-  Bundle "git://github.com/ervandew/supertab.git"
-  Bundle "git://github.com/scrooloose/nerdtree.git"
+  Plugin 'tomasr/molokai'
+  Plugin 'altercation/vim-colors-solarized'
+  Plugin 'ervandew/supertab'
+  Plugin 'scrooloose/nerdtree'
     let NERDTreeHijackNetrw = 0
 
     nmap gt :NERDTreeToggle<CR>
     nmap g :NERDTree \| NERDTreeToggle \| NERDTreeFind<CR>
 
-  Bundle "git://github.com/kien/ctrlp.vim.git"
+  Plugin 'kien/ctrlp.vim'
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>
     nnoremap <Leader>T :<C-U>CtrlPTag<CR>
@@ -20,7 +20,7 @@
         \ 'PrtSelectMove("k")':   ['<up>'],
         \ }
 
-  Bundle 'git://github.com/rking/ag.vim.git'
+  Plugin 'rking/ag.vim'
     nmap g/ :Ag!<space>
     nmap g* :Ag! -w <C-R><C-W><space>
     nmap ga :AgAdd!<space>
@@ -29,14 +29,14 @@
     nmap gq :ccl<CR>
     nmap gl :cwindow<CR>
 
-  Bundle "git://github.com/tpope/vim-markdown.git"
+  Plugin 'tpope/vim-markdown'
     augroup mkd
       autocmd BufNewFile,BufRead *.mkd      set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
       autocmd BufNewFile,BufRead *.md       set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
       autocmd BufNewFile,BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
     augroup END
 
-  Bundle "git://github.com/godlygeek/tabular.git"
+  Plugin 'godlygeek/tabular'
     function! CustomTabularPatterns()
       if exists('g:tabular_loaded')
         AddTabularPattern! symbols         / :/l0
@@ -54,7 +54,7 @@
     " shortcut to align text with Tabular
     map <Leader>a :Tabularize<space>
 
-  Bundle "git://github.com/tpope/vim-unimpaired.git"
+  Plugin 'tpope/vim-unimpaired'
     " Bubble single lines
     nmap <C-Up> [e
     nmap <C-Down> ]e
@@ -64,20 +64,20 @@
     vmap <C-Down> ]egv
 
 " Programming
-  Bundle "git://github.com/tpope/vim-fugitive.git"
-  Bundle "git://github.com/juvenn/mustache.vim.git"
-  Bundle "git://github.com/nono/vim-handlebars.git"
-  Bundle "git://github.com/tomtom/tcomment_vim.git"
-  Bundle "git://github.com/othree/html5.vim.git"
-  Bundle "git://github.com/hail2u/vim-css3-syntax.git"
-  Bundle "git://github.com/groenewege/vim-less.git"
-  Bundle "git://github.com/tpope/vim-haml.git"
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'juvenn/mustache.vim'
+  Plugin 'nono/vim-handlebars'
+  Plugin 'tomtom/tcomment_vim'
+  Plugin 'othree/html5.vim'
+  Plugin 'hail2u/vim-css3-syntax'
+  Plugin 'groenewege/vim-less'
+  Plugin 'tpope/vim-haml'
     au BufNewFile,BufRead *.haml set filetype=haml
 
-  Bundle "git://github.com/slim-template/vim-slim.git"
+  Plugin 'slim-template/vim-slim'
     au BufNewFile,BufRead *.slim set filetype=slim
 
-  Bundle "git://github.com/scrooloose/syntastic.git"
+  Plugin 'scrooloose/syntastic'
     let g:syntastic_enable_signs=1
     let g:syntastic_quiet_messages=1
     " syntastic is too slow for haml and sass
@@ -86,8 +86,8 @@
                                \ 'passive_filetypes': ['haml','scss','sass'] }
 
 " Ruby
-  Bundle "git://github.com/vim-ruby/vim-ruby.git"
-  Bundle "git://github.com/tpope/vim-rails.git"
+  Plugin 'vim-ruby/vim-ruby'
+  Plugin 'tpope/vim-rails'
     map <Leader>oc :Rcontroller<Space>
     map <Leader>ov :Rview<Space>
     map <Leader>om :Rmodel<Space>
@@ -95,10 +95,10 @@
     map <Leader>oj :Rjavascript<Space>
     map <Leader>os :Rstylesheet<Space>
     map <Leader>oi :Rintegration<Space>
-  Bundle "git://github.com/tpope/vim-cucumber.git"
-  Bundle "git://github.com/tpope/vim-endwise.git"
-  Bundle "git://github.com/sunaku/vim-ruby-minitest.git"
+  Plugin 'tpope/vim-cucumber'
+  Plugin 'tpope/vim-endwise'
+  Plugin 'sunaku/vim-ruby-minitest'
 
 " JavaScript
-  Bundle "git://github.com/pangloss/vim-javascript.git"
-  Bundle "git://github.com/kchmck/vim-coffee-script.git"
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'kchmck/vim-coffee-script'
